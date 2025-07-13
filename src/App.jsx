@@ -10,6 +10,7 @@ function App() {
     if (!question.trim()) return;
     setLoading(true);
     setResponse('');
+
     try {
       const res = await fetch('https://evidence-based-literacy.onrender.com/ask', {
         method: 'POST',
@@ -21,6 +22,7 @@ function App() {
     } catch (err) {
       setResponse('An error occurred. Please try again.');
     }
+
     setLoading(false);
   };
 
@@ -47,4 +49,3 @@ function App() {
 }
 
 export default App;
-
