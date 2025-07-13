@@ -11,7 +11,7 @@ function App() {
     setLoading(true);
     setResponse('');
     try {
-      const res = await fetch('/ask', {
+      const res = await fetch('https://evidence-based-literacy.onrender.com/ask', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question }),
