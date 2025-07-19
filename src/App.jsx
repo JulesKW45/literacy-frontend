@@ -50,10 +50,6 @@ function App() {
       <header>
         <div className="header-content">
           <img src={logo} alt="The Literacy Blueprint Logo" className="logo" />
-          <div className="title-block">
-            <h1>The Literacy Blueprint</h1>
-            <p>Turning Research Into Actionable Literacy Success</p>
-          </div>
         </div>
       </header>
 

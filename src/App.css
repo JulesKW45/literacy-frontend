@@ -9,7 +9,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 header {
@@ -18,32 +18,20 @@ header {
 
 .header-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
 }
 
 .logo {
-  width: 80px;
-  height: auto;
+  height: 250px;         /* was 180 */
+  max-height: 300px;
+  width: auto;
   max-width: 100%;
-}
-
-.title-block h1 {
-  margin: 0;
-  color: #2c3e50;
-}
-
-.title-block p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #555;
 }
 
 .input-area {
   display: flex;
   gap: 10px;
-  justify-content: center;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
@@ -75,7 +63,6 @@ button:hover {
   gap: 20px;
   max-width: 700px;
   margin: 0 auto;
-  text-align: left;
 }
 
 .card {
@@ -112,4 +99,21 @@ footer {
   margin-top: 40px;
   font-size: 0.9rem;
   color: #aaa;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .logo {
+    height: 150px;
+  }
 }
